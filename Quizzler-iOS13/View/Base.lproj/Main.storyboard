@@ -20,9 +20,8 @@
                                 <rect key="frame" x="0.0" y="794" width="414" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" fixedFrame="YES" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-li-mhO">
-                                <rect key="frame" x="20" y="44" width="374" height="583"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSI-li-mhO">
+                                <rect key="frame" x="20" y="250" width="374" height="396"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -35,9 +34,8 @@
                                 <color key="progressTintColor" red="1" green="0.45854175089999999" blue="0.6605013609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVw-Hl-IRe">
-                                <rect key="frame" x="20" y="654" width="374.00000000000006" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVw-Hl-IRe">
+                                <rect key="frame" x="20" y="666" width="374" height="68"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="True" backgroundImage="Rectangle">
@@ -47,9 +45,8 @@
                                     <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c4n-L2-zGP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbn-vQ-GyC">
-                                <rect key="frame" x="20" y="744" width="374.00000000000006" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbn-vQ-GyC">
+                                <rect key="frame" x="20" y="756" width="374" height="68"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="False" backgroundImage="Rectangle">
@@ -59,14 +56,37 @@
                                     <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qgo-nF-t4F"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qf-JO-BMF">
+                                <rect key="frame" x="20" y="44" width="394" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.14509803921568626" green="0.17254901960784313" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oVw-Hl-IRe" secondAttribute="bottom" constant="128" id="2Vv-mX-Tcu"/>
+                            <constraint firstItem="rSI-li-mhO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AFr-cp-H5a"/>
+                            <constraint firstItem="rSI-li-mhO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="C5s-bS-5Cf"/>
+                            <constraint firstAttribute="trailing" secondItem="tbn-vQ-GyC" secondAttribute="trailing" constant="20" id="CTS-t1-yUU"/>
+                            <constraint firstItem="rSI-li-mhO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Eh9-SL-AIz"/>
+                            <constraint firstItem="oVw-Hl-IRe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="GX9-20-PUL"/>
+                            <constraint firstItem="tbn-vQ-GyC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Vg2-x6-A9o"/>
+                            <constraint firstAttribute="bottom" secondItem="tbn-vQ-GyC" secondAttribute="bottom" constant="72" id="aSw-II-bWT"/>
+                            <constraint firstAttribute="trailing" secondItem="oVw-Hl-IRe" secondAttribute="trailing" constant="20" id="cf9-wA-Iwg"/>
+                            <constraint firstItem="rSI-li-mhO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="olF-TY-9g8"/>
+                            <constraint firstItem="rSI-li-mhO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ozy-ih-kfL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rSI-li-mhO" secondAttribute="bottom" constant="216" id="pDl-IS-SzW"/>
+                            <constraint firstItem="rSI-li-mhO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qyJ-rv-Nxd"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="falseButton" destination="tbn-vQ-GyC" id="BBn-8L-gEz"/>
                         <outlet property="progressBar" destination="TXm-qh-7Xg" id="pcW-vy-j5i"/>
                         <outlet property="questionLabel" destination="rSI-li-mhO" id="l0L-In-l8m"/>
+                        <outlet property="scoreLabel" destination="4qf-JO-BMF" id="f0K-FB-d0d"/>
                         <outlet property="trueButton" destination="oVw-Hl-IRe" id="Flm-M2-8Ey"/>
                     </connections>
                 </viewController>
